@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    filter: brightness(100%);
+  }
+  .navbar {
+    background-color: transparent;
+    padding: 10px 0;
+    z-index: 1;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar li {
+    margin: 0 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+   .navbar li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #a3eee6;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.65s;
+  }
+
+  .navbar li:hover::after {
+    width: 100%;
+  }
+
+ 
+  
+  
+  .heading7 {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(216, 192, 192, 0.7), rgba(204, 3, 3, 0.7));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+  }
+   
+  .backgroundvid7 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  @media (min-aspect-ratio: 16/9) {
+    .backgroundvid7 {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-aspect-ratio: 16/9) {
+    .backgroundvid7 {
+      width: auto;
+      height: 100%;
+    }
+  }
+  
+  
+  
+  
+  .banner7 {
+    min-height: 100%;
+    position: relative;
+  }
+  
+  .footer {
+    width: 100%;
+    background-color: #00f074;
+    padding: 20px 0;
+    margin-top: 150px;
+  }
+  
+  .footer-content {
+    text-align: center;
+  }
+  
+  .footer-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .footer-content ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .footer-content ul a{
+    text-decoration: none;
+    color: #000000;
+  }
+  .title-word {
+    animation: color-animation 6s linear infinite;
+    font-size: 80px;
+    
+  }
+  
+  .title-word-1 {
+    --color-1: #42403d;
+    --color-2: #f5f7f8;
+    --color-3: #033d53;
+  }
+  
+  
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+  
+  
+  .banner7 {
+    display: grid;
+    place-items: center;  
+    text-align: center;
+    height: 100vh;
+    margin-top: -200px;
+  }
+  
+  .title7 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 6vw;
+    text-transform: uppercase;
+  }
+  
+  #donations7 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+    .donation {
+      width: 600px; 
+      padding: 30px; 
+      margin: 20px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-top: -100px;
+    }
+    
+    
+    
+    .donation img {
+      width: 450px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-top: -150px;
+    }
+    
+    .donation h3 {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+    
+    .donation a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #1383a5;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    
+    .donation a:hover {
+      background-color: #368b6d;
+    }
+    
+    /* Animation */
+    @keyframes donationFadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .donation {
+      animation: donationFadeIn 1s ease-in-out;
+    }
+    
+  
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+    
+    #merch {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    
+    .product1 {
+      width: 600px;
+      padding: 20px;
+      margin: 20px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      text-align: center;
+      border: 0px solid #42b983;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      animation: scale-animation 0.5s ease-in-out alternate infinite;
+      margin-top: 170px;
+    }
+    
+    .product1 img {
+      width: 250px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-top: -80px; 
+    }
+    
+    .product1 h3 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      margin: 10px 0;
+    }
+    
+    
+    
+    .product1 .price {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: #033d53;
+    }
+    
+    .product1 a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #42b983;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      transition: background-color 0.3s ease;
+    }
+    
+    .product1 a:hover {
+      background-color: #368b6d;
+    }
+    
+    @keyframes scale-animation {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.03);
+      }
+    }
+    
+    footer {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+      margin-top: 100px;
+    }
+    
+    footer nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 15px;
+    }
+    
+    footer nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    
+    footer nav ul li:last-child {
+      margin-right: 0;
+    }
+    
+    footer nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    
+    footer nav ul li a:hover {
+      color: #037e47;
+    }
+    
+    footer p {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #666;
+      font-family: 'Roboto', sans-serif;
+    }
+  
